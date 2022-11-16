@@ -1,0 +1,26 @@
+.navbar-brand{
+  background-color: rgb(87, 87, 174);
+  width: 50px;
+}
+
+nav {
+  position: sticky;
+  margin-left: 30vw;
+  background-color: rgb(55, 54, 54);
+  width: 90% ;
+  border-radius: 15px;
+  border: solid 1px rgb(163, 163, 163);
+  box-shadow: 2px 2px rgb(180, 180, 180), 4px 4px rgb(91, 91, 91);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: medium;
+  color:rgb(255, 47, 0);
+  margin:30px;
+}
+
+a{
+  font-size:medium;
+  color:beige;
+}
+span{
+  font-size: 20px;
+}
