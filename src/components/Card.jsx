@@ -30,7 +30,7 @@ export default function Card ({min, max,
    <p>Max: {max}°</p>
    <p>Min: {min}°</p>
    </CompWords>
-   <img src={`http://openweathermap.org/img/wn/${img}@2x.png`} alt="icon"/>
+   <img src={`https://openweathermap.org/img/wn/${img}@2x.png`} alt="icon"/>
 
   </div>
     );
