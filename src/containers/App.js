@@ -12,12 +12,28 @@ const apiKey="b75782c8233c25aed8b9790bcf6fa246";
 function App() {
 
   const onSearch=(ciudad)=>{
-  
-    axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${apiKey}&units=metric`
-    ).then((response)=>{setCities(oldCities => [...oldCities, response.data ]);
-    });
-};
+  //     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${apiKey}&units=metric`)
+  //      .then(r => r.json())
+  //      .then((recurso) => {
+  //       if(recurso.main !== undefined){  setCities(oldCities => [...oldCities, recurso.main]);
+  //   } else {
+  //     alert("City not found");
+  //   };
+  // })
 
+    axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${apiKey}&units=metric`
+    ).then((response)=>{
+      // if(response !== null)
+      {setCities(oldCities => [...oldCities, response.data ])}
+      // else {
+      //   alert(" jj")
+      // }
+    });
+};   
+// fetch(`https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${apiKey}&units=metric`)
+// .then(r => r.json())
+// .then((recurso) => {
+//   if(recurso.main !== undefined){
 function onClose(id) {
   setCities(oldCities => oldCities.filter(city => city.id !== id));
 };
